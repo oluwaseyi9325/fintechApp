@@ -16,13 +16,14 @@ const Stack= createStackNavigator<RootStackParamList>()
 export default function StackNavigation() {
   return (
   <Stack.Navigator screenOptions={{headerShown:false}}>
+      <Stack.Screen name={routes.NOTIFICATION_SCREEN} component={NotificationScreen} />
      <Stack.Screen name={routes.TRANSFER_SCREEN} component={TransferScreen} />
     <Stack.Screen name={routes.HOMEPAGE} component={HomepageScreen} />
    
     <Stack.Screen name={routes.CONFIRMATION_SCREEN} component={ConfirmationScreen} />
     <Stack.Screen name={routes.TRANSACTION_HISTORY_SCREEN} component={TransactionHistoryScreen} />
     <Stack.Screen name={routes.CARD_SCREEN} component={CardScreen} />
-    <Stack.Screen name={routes.NOTIFICATION_SCREEN} component={NotificationScreen} />
+  
     <Stack.Screen name={routes.PROFILE_COMPLETED_SCREEN} component={ProfileCompletedScreen} />
     <Stack.Screen name={routes.PROFILE_SCREEN} component={ProfileScreen} />
   </Stack.Navigator>
