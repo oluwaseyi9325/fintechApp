@@ -10,8 +10,9 @@ import CardScreen from '../screens/CardScreen'
 import NotificationScreen from '../screens/NotificationScreen'
 import ProfileCompletedScreen from '../screens/ProfileCompletedScreen'
 import ProfileScreen from '../screens/ProfileScreen'
+import { RootStackParamList } from '../types/StackTypes'
 
-const Stack= createStackNavigator()
+const Stack= createStackNavigator<RootStackParamList>()
 export default function StackNavigation() {
   return (
   <Stack.Navigator>
