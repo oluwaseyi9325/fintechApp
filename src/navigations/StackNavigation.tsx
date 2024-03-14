@@ -15,7 +15,7 @@ import { RootStackParamList } from '../types/StackTypes'
 const Stack= createStackNavigator<RootStackParamList>()
 export default function StackNavigation() {
   return (
-  <Stack.Navigator>
+  <Stack.Navigator screenOptions={{headerShown:false}}>
     <Stack.Screen name={routes.HOMEPAGE} component={HomepageScreen} />
     <Stack.Screen name={routes.TRANSFER_SCREEN} component={TransferScreen} />
     <Stack.Screen name={routes.CONFIRMATION_SCREEN} component={ConfirmationScreen} />
