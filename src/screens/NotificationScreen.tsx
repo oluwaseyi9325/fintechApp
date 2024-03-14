@@ -5,9 +5,9 @@ import NotificationCollapse from '../components/NotificationCollapse';
 export default function NotificationScreen() {
   return (
     <View className='flex-1 bg-white p-5 py-10'>
-     <View className='bg-gray-200 rounded-2xl flex-row items-center p-3'>
+     <View className='bg-[#F5F6FA] rounded-2xl flex-row items-center p-3'>
      <Ionicons name="search-sharp" size={34} color="#27437D" />
-     <TextInput placeholder='Search' className='p-2 font-bold text-[#27437D] text-xl' />
+     <TextInput placeholder='Search' className='p-2 font-bold text-[#27437D] text-xl ' />
      </View>
      <View className='mt-10'>
       <Text className='font-bold text-3xl'>You can check your</Text>

@@ -29,16 +29,14 @@ const BottomNavigation = () => {
         },
     headerShown:false,
     tabBarLabel:"",
-tabBarStyle:{padding:40}
+tabBarStyle:{height:70,borderWidth:0},
+
+
       })}
-    //   tabBarOptions={{
-    //     activeTintColor: 'tomato',
-    //     inactiveTintColor: 'gray',
-    //   }as any}
-    >
-      <Tab.Screen name="Home"  component={HomepageScreen} />
-      <Tab.Screen name="Notification" component={NotificationScreen} />
       
+    >
+      <Tab.Screen name="Home" component={HomepageScreen} />
+      <Tab.Screen name="Notification" component={NotificationScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );

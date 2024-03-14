@@ -9,7 +9,7 @@ export default function NotificationCollapse() {
       setActiveIndex(index === activeIndex ? null : index);
     };
     const sections = [
-        { title: 'Seyi Adedokun', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm.',img: require("../../assets/images/seyi.jpg") },
+        { title: 'Seyi Adedokun.', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm.',img: require("../../assets/images/seyi.jpg") },
         { title: 'Seyi Adedokun', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm.',img: require("../../assets/images/seyi.jpg") },
         { title: 'Seyi Adedokun', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm.',img: require("../../assets/images/seyi.jpg") },
         { title: 'Seyi Adedokun', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm.',img: require("../../assets/images/seyi.jpg") },
@@ -20,7 +20,7 @@ export default function NotificationCollapse() {
       ];
     
   return (
-    <ScrollView showsVerticalScrollIndicator={false} className='pb-10 mt-5'>
+    <ScrollView showsVerticalScrollIndicator={false} className=' mt-5'>
           <View style={styles.container} className=''>
     {sections.map((section, index) => (
       <View key={index} style={styles.section}>
