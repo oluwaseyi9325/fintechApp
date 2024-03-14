@@ -4,7 +4,7 @@ import TransferHeader from '../../components/TransferHeader'
 
 export default function TransferScreen() {
   return (
-    <View>
+    <View className='bg-white'>
     <TransferHeader headerName="Transfer"/>
     </View>
   )
