@@ -4,7 +4,7 @@ import React from 'react'
 export default function TransactionHistoryScreen() {
   return (
     <View>
-      <Text>TransactionHistoryScreen</Text>
+     
     </View>
   )
 }
