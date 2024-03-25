@@ -1,16 +1,20 @@
-import { View, Text, TextInput, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Image, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import React from 'react';
 import { FontAwesome } from '@expo/vector-icons';
 import ProfileInput from '../../components/ProfileInput';
-
+// import {} from Dimensions
 export default function ProfileScreen() {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View className='flex-row justify-end '>
+        <Image className='flex-row justify-end absolute' source={require("../../../assets/images/blue2.png")}/>
+      </View>
+     <View style={{ paddingHorizontal: 20}}>
+     <View style={styles.header}>
         <Text style={styles.headerText}>Profile</Text>
       </View>
       <View style={styles.profileInfo}>
-        <Image source={require("../../../assets/images/profile1.png")} style={styles.profileImage} />
+        <Image className='rounded-full' source={require("../../../assets/images/seyi.jpg")} style={styles.profileImage} />
         <View>
           <Text style={styles.name}>Emma Ashley</Text>
           <Text style={styles.status}>Online</Text>
@@ -26,6 +30,7 @@ export default function ProfileScreen() {
         <Text style={styles.signOutText}>Sign out</Text>
         <FontAwesome name="sign-out" size={30} color="white" />
       </TouchableOpacity>
+     </View>
     </View>
   );
 }
@@ -34,7 +39,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
-    paddingHorizontal: 20,
+   
   },
   header: {
     paddingTop: 50,
@@ -49,12 +54,16 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
   profileImage: {
-    width: 100,
-    height: 100,
-    marginRight: 20,
+    width: 90,
+    height: 90,
+    marginRight: 10,
+    // elevation:10,
+    shadowColor:"black",
+    shadowOpacity:10,
+    shadowOffset:{height:2,width:5}
   },
   name: {
-    fontSize: 24,
+    fontSize: 23,
     fontWeight: 'bold',
     color: '#4960F9',
   },

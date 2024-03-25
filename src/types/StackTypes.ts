@@ -8,4 +8,5 @@ export type RootStackParamList = {
     [routes.NOTIFICATION_SCREEN]: undefined;
     [routes.PROFILE_COMPLETED_SCREEN]: undefined;
     [routes.PROFILE_SCREEN]: undefined;
+    [routes.TABS]:undefined
   };

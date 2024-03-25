@@ -7,5 +7,6 @@ export default Object.freeze({
     NOTIFICATION_SCREEN: 'NotificationScreen',
     PROFILE_COMPLETED_SCREEN: 'ProfileCompletedScreen',
     PROFILE_SCREEN: 'ProfileScreen', 
+    TABS:"Tabs"
   });
   
